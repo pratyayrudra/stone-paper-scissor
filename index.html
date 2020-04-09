@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Stone Paper Scissor</h1>
+        <div class="score">
+            <div class="win">
+                <i class="fas fa-thumbs-up"></i>
+                <p>Win&nbsp;<span id="win"></span></p>
+            </div>
+            <div class="draw">
+                <i class="fas fa-handshake"></i>
+                <p>Draw&nbsp;<span id="draw"></span></p>
+            </div>
+            <div class="lost">
+                <i class="fas fa-thumbs-down"></i>
+                <p>Lost&nbsp;<span id="lost"></span></p>
+            </div>
+        </div>
+        <div class="results"></div>
+        <div class="buttons">
+            <button class="btn s"><i class="fas fa-hand-rock"></i>&nbsp;Stone</button>
+            <button class="btn p"><i class="fas fa-hand-paper"></i>&nbsp;Paper</button>
+            <button class="btn c"><i class="fas fa-hand-scissors"></i>&nbsp;Scissors</button>
+        </div>
+        <div class="computer">
+            <p>The computer chose <span id="computer-choice"></span></p>
+            <a href="" id="reset">RESET</a>
+        </div>
+
+        <div class="footer">
+            <button id="theme-switch"></button>
+            <span><a href="https://pratyayrudra.com" target="_blank">Pratyay Rudra</a> &copy; 2020</span>
+            <a href="https://github.com/pratyayrudra/rock-paper-scissor" target="_blank">
+                <svg viewBox="0 0 64 64" width="20" height="20">
+                    <path stroke-width="0" fill="currentColor"
+                        d="M32 0 C14 0 0 14 0 32 0 53 19 62 22 62 24 62 24 61 24 60 L24 55 C17 57 14 53 13 50 13 50 13 49 11 47 10 46 6 44 10 44 13 44 15 48 15 48 18 52 22 51 24 50 24 48 26 46 26 46 18 45 12 42 12 31 12 27 13 24 15 22 15 22 13 18 15 13 15 13 20 13 24 17 27 15 37 15 40 17 44 13 49 13 49 13 51 20 49 22 49 22 51 24 52 27 52 31 52 42 45 45 38 46 39 47 40 49 40 52 L40 60 C40 61 40 62 42 62 45 62 64 53 64 32 64 14 50 0 32 0 Z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

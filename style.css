@@ -1,0 +1,188 @@
+/* Themes */
+.dark {
+  --primary: #000;
+  --secondary: #fff;
+  --emoji: "🌝";
+  --text: "Light Mode?";
+}
+
+.light {
+  --primary: #fff;
+  --secondary: #000;
+  --emoji: "🌚";
+  --text: "Dark Mode?";
+}
+
+/* General */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Mono";
+}
+
+h1 {
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin: 2rem 0 0;
+}
+
+a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary);
+}
+
+/* Scores Section */
+.container .score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.container .score div {
+  height: auto;
+  width: 80px;
+  background: var(--primary);
+  color: var(--secondary);
+  padding: 1rem 3rem;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  border: 1px solid var(--secondary);
+  border-radius: 16px;
+  box-shadow: 1px 1px 10px var(--secondary);
+}
+
+.container .score p {
+  margin-bottom: 0;
+}
+
+/* Results Section */
+.container .results {
+  height: 50px;
+  width: 150px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--result);
+  color: var(--secondary);
+  border: 1px solid var(--primary);
+  border-radius: 40px;
+  box-shadow: 1px 1px 20px var(--result);
+}
+
+/* Stone Paper Scissor button area */
+.container .buttons {
+  margin: 2rem 0;
+}
+
+/* Computer Result And Reset */
+.container .computer {
+  text-align: center;
+}
+
+.container .computer p {
+  margin: 0;
+  margin-bottom: 1rem;
+  color: var(--secondary);
+}
+
+/* Footer */
+.container .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+/* Theme Switcher Button */
+.container .footer button {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 0.5rem 1rem;
+  background: var(--primary);
+  color: var(--secondary);
+  border: 0;
+  cursor: pointer;
+  box-shadow: 1px 1px 20px var(--secondary);
+}
+
+.container .footer button::before {
+  content: var(--emoji);
+  margin: 0 0.2rem;
+}
+
+.container .footer button::after {
+  content: var(--text);
+}
+
+.container .footer button:hover {
+  border: 0.1px solid var(--secondary);
+}
+
+.container .footer button:focus {
+  outline: none;
+  border: none;
+}
+
+/* Copywrite and Github Link */
+.container .footer span {
+  margin: 2rem auto 1rem auto;
+  color: var(--secondary);
+  font-size: 0.8rem;
+}
+
+/* Rock Paper Scissor Button Styles */
+.btn {
+  padding: 0.5rem 1rem;
+  margin: 0 0.1rem;
+  background: var(--secondary);
+  color: var(--primary);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  font-weight: 700;
+}
+
+.btn:hover {
+  border: 0.1px solid var(--primary);
+  box-shadow: 1px 1px 20px var(--secondary);
+}
+
+.btn:focus {
+  border: 0.1px solid var(--primary);
+  box-shadow: 1px 1px 20px var(--secondary);
+}
+
+/* Mobile CSS */
+@media (max-width: 425px) {
+  /* To Fix overflow */
+  .container {
+    position: absolute;
+  }
+
+  /* To make scores smaller */
+  .container .score div {
+    height: 50px;
+    width: 50px;
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 110px;
+  }
+}
