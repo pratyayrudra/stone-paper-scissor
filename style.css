@@ -24,6 +24,7 @@ h1 {
   text-transform: uppercase;
   color: var(--secondary);
   margin: 2rem 0 0;
+  font-size: 1.7rem;
 }
 
 a {
