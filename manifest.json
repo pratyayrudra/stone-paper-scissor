@@ -5,8 +5,8 @@
   "background_color": "#000000",
   "display": "fullscreen",
   "orientation": "portrait",
-  "Scope": "/stone-paper-scissor/",
-  "start_url": "/stone-paper-scissor/",
+  "Scope": "./",
+  "start_url": ".",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",

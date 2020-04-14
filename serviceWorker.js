@@ -1,10 +1,11 @@
-const cacheName = "site-v1"
+const cacheName = "site"
 const assets = [
     "./",
     "./index.html",
-    "./style.css",
-    "./index.js",
-    "./images/logo.png"
+    "./assets/css/style.css",
+    "./assets/js/index.js",
+    "./images/logo.png",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
 ]
 
 // Installing Service Worker
@@ -12,7 +13,7 @@ self.addEventListener('install', function (e) {
     console.log('[Service Worker] Install');
     e.waitUntil(
         caches.open(cacheName).then(function (cache) {
-            console.log('[Service Worker] Caching all: app shell and content');
+            console.log('[Service Worker] Caching all content');
             return cache.addAll(assets);
         })
     );
